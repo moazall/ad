@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق القرآن الكريم</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+        <h1>تطبيق القرآن الكريم</h1>
+    </header>
+    <main>
+        <section id="surahs">
+            <h2>سور القرآن الكريم</h2>
+            <ul>
+                <li><a href="#" onclick="playAudio('surah_fatiha.mp3')">سورة الفاتحة</a></li>
+                <li><a href="#" onclick="playAudio('surah_baqarah.mp3')">سورة البقرة</a></li>
+                <!-- أضف المزيد من السور هنا -->
+            </ul>
+        </section>
+        <section id="audio">
+            <h2>التلاوات الصوتية</h2>
+            <audio id="audioPlayer" controls>
+                <source id="audioSource" src="" type="audio/mpeg">
+                متصفحك لا يدعم تشغيل الصوت.
+            </audio>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 تطبيق القرآن الكريم. جميع الحقوق محفوظة لـ Moaz.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
